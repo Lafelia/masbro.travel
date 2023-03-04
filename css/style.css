@@ -42,27 +42,20 @@ body {
 .nav-link {
     display: flex;
     column-gap: 1rem;
-    font-size: 1.2rem;    
 }
 
 .nav-item {
+    font-size: 1.2rem;    
     text-decoration: none;
     color: var(--secondary);
-    transition: 200ms ease-in-out;
-    z-index: 1;
+    outline: transparent;
+    transition: all 200ms ease-in-out;
 }
 
 .nav-item:hover, .nav-item:focus {
     transform: translateY(-3px);
     color: var(--primary);
-    outline: transparent;
 }
-
-/* .nav-item:focus {
-    outline: 1px solid var(--secondary);
-    transform: translateY(-3px);
-    color: var(--primary);
-} */
 
 .hero-wrapper {
     position: relative;
@@ -112,6 +105,66 @@ body {
 .subtitle {
     font-size: 1.5rem;
 }
+
+.button-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.button {
+    position: relative;
+    outline: transparent;
+    font-family: inherit;
+    border: none;
+    font-size: 1.5rem;
+    padding: .5rem 2rem;
+    background-color: var(--secondary);
+    color: var(--primary);
+    z-index: 1;
+    transition: all 200ms ease-in-out;
+}
+
+.button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--primary);
+    transform-origin: left;
+    transform: scaleX(0);
+    z-index: -1;
+    transition: all 200ms ease-in-out;
+}
+
+.arrow {
+    font-size: 1.2rem;
+    color: var(--secondary);
+    position: absolute;
+    top: 50%;
+    left: 80%;
+    transform: translate(-50%, -50%) rotate(180deg);
+    z-index: -1;
+    transition: left 200ms ease-in-out;
+}
+
+.button:hover::before, 
+.button:focus::before {
+    transform: scaleX(1);
+}
+
+.button:hover,
+.button:focus {
+    color: var(--secondary);
+}
+
+.button:hover ~ .arrow, .button:focus ~ .arrow{
+    left: 120%;
+    transform: translate(-50%, -50%) rotate(0);
+}
+
 @media screen and (max-width: 600px) {
     .navbar {
         padding: 0 1rem;
@@ -146,6 +199,15 @@ body {
     
     .subtitle {
         font-size: 1rem;
+    }
+
+    .button {
+        font-size: 1rem;
+        padding: .5rem 1.5rem;
+    }
+
+    .arrow {
+        font-size: .9rem;
     }
 }
 
