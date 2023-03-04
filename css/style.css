@@ -176,8 +176,11 @@ body {
     }
     
     .nav-link {
-        font-size: .9rem;
         column-gap: .55rem;   
+    }
+    
+    .nav-item {
+        font-size: .9rem;
     }
 
     .hero {
