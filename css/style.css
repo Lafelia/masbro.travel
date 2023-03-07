@@ -788,3 +788,9 @@ body {
     }
 
 }
+
+@media screen and (max-width:320px) {
+    .title {
+        font-size: 1.7rem;
+    }
+}
