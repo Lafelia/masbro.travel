@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/font.css">
-    <link rel="stylesheet" type="text/css" href="js/slick/slick/slick.css" />
     <link href="assets/icons/css/fontawesome.css" rel="stylesheet">
     <link href="assets/icons/css/brands.css" rel="stylesheet">
     <link href="assets/icons/css/solid.css" rel="stylesheet">
@@ -30,9 +29,15 @@
     </nav>
     <main class="hero-wrapper" id="home">
         <section class="hero">
-            <img src="image/dino-reichmuth-A5rCN8626Ck-unsplash.webp" alt="" class="gambar">
-            <img src="image/ezgif.com-gif-maker.webp" alt="" class="gambar">
-            <img src="image/ezgif.com-gif-maker (1).webp" alt="" class="gambar">
+            <div class="hero-slide">
+                <img src="image/dino-reichmuth-A5rCN8626Ck-unsplash.webp" alt="" class="gambar">
+            </div>
+            <div class="hero-slide">
+                <img src="image/ezgif.com-gif-maker.webp" alt="" class="gambar">
+            </div>
+            <div class="hero-slide">
+                <img src="image/ezgif.com-gif-maker (1).webp" alt="" class="gambar">
+            </div>
         </section>
         <header class="header-wrapper">
             <section class="title-wrapper">
@@ -90,7 +95,7 @@
                 </section>
             </section>
         </section>
-        <section class="contact-us-wrapper">
+        <section class="contact-us-wrapper" id="call-us">
             <div class="contact-header">
                 <span>Contact Us</span>
                 <span>Sales akan menghubungi anda 1x24 jam setelah data kami diterima</span>
@@ -104,7 +109,7 @@
                     </div>
                     <div class="data">
                         <label for="email">Email Address :</label>
-                        <input type="email" name="email" placeholder="example@gmail.com" class="email" id="email">
+                        <input type="email" name="email" placeholder="example@gmail.com" pattern=".+@gmail.com" class="email" id="email">
                     </div>
                     <div class="data">
                         <label for="interest">What are you interested in?</label>
@@ -225,16 +230,8 @@
         </div>
     </footer>
 
-
-
-
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
-        integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script type="text/javascript" src="js/slick/slick/slick.min.js"></script>
-    <script src="js/slick.js"></script>
     <script src="js/script.js"></script>
+    <script src="js/validate.js"></script>
 </body>
 
 </html>

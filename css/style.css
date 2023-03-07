@@ -69,23 +69,29 @@ body {
 }
 
 .hero {
-    z-index: -1;
     height: 100vh;
+    width: 100%;
+    display: flex;
+    z-index: -1;
+}
+
+.hero-slide {
+    min-width: 100%;
     position: relative;
 }
 
-.hero::after {
+.hero-slide::after {
     content: '';
     position: absolute;
     top: 0;
-    right: 0;
     left: 0;
+    right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.473);
+    background-color: #000000a1;
 }
 
 .hero img {
-    height: 100vh;
+    height: 100%;
     width: 100%;
     object-fit: cover;
 }
@@ -94,7 +100,7 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    z-index: 2;
+    z-index: 5;
     height: 100vh;
     width: 100vw;
     display: flex;
@@ -558,6 +564,10 @@ body {
 }
 
 @media screen and (max-width: 600px) {
+    body {
+        overflow-x: hidden;
+    }
+
     .navbar {
         padding: 0 1rem;
         height: 8vh;
@@ -575,13 +585,12 @@ body {
         font-size: .9rem;
     }
 
-    .hero {
-        height: 100svh;
+    .hero-wrapper {
+        overflow: hidden;
     }
 
-    .hero img {
+    .hero {
         height: 100svh;
-        object-position: center;
     }
 
     .header-wrapper {
