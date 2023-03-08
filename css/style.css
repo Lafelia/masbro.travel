@@ -563,6 +563,234 @@ body {
     gap: 1rem;
 }
 
+@media screen and (max-width:1440px) {
+    .hero-wrapper {
+        overflow: hidden;
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .hero-wrapper {
+        overflow: hidden;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .navbar {
+        padding: 0 1.2rem;
+        height: 8vh;
+    }
+
+    .brand {
+        font-size: 1.7rem;
+    }
+
+    .nav-link {
+        column-gap: .55rem;
+    }
+
+    .nav-item {
+        font-size: 1rem;
+    }
+
+    .hero-wrapper {
+        overflow: hidden;
+    }
+
+    .title {
+        font-size: 2.4rem;
+    }
+
+    .subtitle {
+        font-size: 1.2rem;
+    }
+
+    .button {
+        font-size: 1.2rem;
+        padding: .5rem 2rem;
+    }
+
+    .arrow {
+        font-size: 1.1rem;
+    }
+
+    .contact-wrapper {
+        gap: 1.5rem;
+        padding: 1rem;
+    }
+
+    .ulasan {
+        font-size: 1rem;
+    }
+
+    .customer {
+        padding: 1rem 0;
+    }
+
+    .user img {
+        height: 7vh;
+    }
+
+    .user-detail {
+        gap: .1rem;
+    }
+
+    .user-detail span:nth-child(1) {
+        font-size: 1rem;
+    }
+
+    .user-detail span:nth-child(2) {
+        font-size: .8rem;
+    }
+
+    .info-header {
+        font-size: 1rem;
+    }
+
+    .information {
+        gap: 1rem;
+    }
+
+    .list {
+        display: grid;
+        grid-template-columns: 30px 1fr;
+        gap: 1rem;
+    }
+
+    .number {
+        font-size: 1rem;
+        height: 30px;
+        width: 30px;
+        margin-right: .5rem;
+    }
+
+    .benefit {
+        font-size: .8rem;
+    }
+
+    .contact-us-wrapper {
+        padding: 1rem;
+    }
+
+    .contact-header {
+        margin-bottom: 2rem;
+    }
+
+    .contact-header span:nth-child(1) {
+        font-size: 1.2rem;
+    }
+
+    .contact-header span:nth-child(2) {
+        font-size: .8rem;
+    }
+
+    .data {
+        font-size: .8rem;
+    }
+
+    .data:not(:last-child) {
+        margin-bottom: 1rem;
+    }
+
+    .data input {
+        font-size: .8rem;
+        height: 5vh;
+    }
+
+    .interest {
+        font-size: .8rem;
+        height: 6vh;
+    }
+
+    .submit-form {
+        height: 5vh;
+        font-size: .8rem;
+    }
+
+    .package-header {
+        margin-top: 1rem;
+    }
+
+    .package-title {
+        font-size: 1.2rem;
+        height: 8vh;
+    }
+
+    .package-wrapper {
+        padding: 1rem;
+    }
+
+    .icon-wrapper {
+        height: 30px;
+        width: 30px;
+    }
+
+    .icon-wrapper svg {
+        height: 1rem;
+    }
+
+    .package-desc {
+        padding: .3rem 0;
+        gap: .5rem;
+    }
+
+    .package-desc header {
+        font-size: 1.2rem;
+    }
+
+    .package-desc span {
+        font-size: .8rem;
+    }
+
+    .garis-package {
+        margin: 1.5rem 0;
+    }
+
+    .call-action-wrapper {
+        padding: 2rem 1rem;
+        gap: 1rem;
+        height: 15vh;
+    }
+
+    .call-desc {
+        gap: .5rem;
+    }
+
+    .call-title {
+        font-size: 1.3rem;
+    }
+
+    .call-subtitle {
+        font-size: .8rem;
+        width: 90%;
+    }
+
+    .call-button {
+        font-size: 1rem;
+        padding: .4rem 1.5rem;
+    }
+
+    .footer {
+        height: 12vh;
+        gap: .5rem;
+    }
+
+    .footer-brand {
+        font-size: 1.1rem;
+    }
+
+    .footer-detail {
+        font-size: .7rem;
+        gap: .1rem;
+    }
+
+    .terms {
+        gap: .5rem;
+    }
+
+}
+
 @media screen and (max-width: 600px) {
     body {
         overflow-x: hidden;

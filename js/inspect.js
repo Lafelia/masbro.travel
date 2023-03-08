@@ -1,6 +1,6 @@
-document.addEventListener('contextmenu', (e) => {
-    e.preventDefault();
-})
+// document.addEventListener('contextmenu', (e) => {
+//     e.preventDefault();
+// })
 
 document.onkeydown = (e) => {
     if(e.keyCode == 123) {
