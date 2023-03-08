@@ -20,6 +20,9 @@ hero.style.transform = `translateX(${-slideWidth * index}px)`
 
 const startSlide = () => {
     setInterval(() => {
+        heroSlide = document.querySelectorAll('.hero-slide')
+        if(index >= heroSlide.length - 1) return;
+        
         index++
         hero.style.transform = `translateX(${-slideWidth * index}px)`
         hero.style.transition = '2s ease-in-out'
